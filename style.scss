@@ -44,7 +44,7 @@ div.active {
   background: rgba(255, 255, 255, 0.18);
   z-index: -1;
   inset: 0;
-  transform: rotate(-10deg);
+  transform: rotate(-12deg);
   border-radius: 10px;
 }
 
@@ -216,4 +216,29 @@ $pop-upText: #333;
 
 #pop-up .pop-up-text button:hover {
   background-color: #d389c4;
+}
+
+
+// responsive part starts from here
+
+@media (max-width: 420px) {
+  .container {
+    height:400px;
+    width: 280px;
+  }
+
+  form {
+    padding: 2px;
+    position: relative;
+    left: 15%;
+    top: 5%;
+  }
+
+  .container img {
+    width: 80px;
+    margin-bottom: 40px;
+    position: relative;
+    left: 35%;
+    top: 5%;
+  }
 }
