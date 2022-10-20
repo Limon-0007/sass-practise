@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sass practise</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="sass source/stylesheets/index.scss build/stylesheets/index.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <img src="logo.png" alt="image not found" />
+
+      <div class="text">
+        <h3>Log In</h3>
+      </div>
+
+      <form id="form" action="#">
+        <div class="input-icons">
+          <i class="fa-regular fa-user icon"></i>
+          <input
+            class="input-field"
+            type="text"
+            placeholder="username"
+            required
+          />
+        </div>
+
+        <div class="input-icons">
+          <i class="fa fa-key icon"></i>
+          <input
+            class="input-field"
+            type="password"
+            placeholder="password"
+            required
+          />
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" required />
+          <label for="checkbox">Remember me</label>
+        </div>
+
+        <button id="btn" class="log-in-btn" type="button"
+        onclick="myFunction()" value="Reset form">
+          Log in
+        </button>
+
+        <div class="footer">
+          <p>Don't have an <a href="#">account?</a></p>
+        </div>
+      </form>
+    </div>
+
+    <!-- pop-up alert starts from here -->
+
+    <div id="bg"></div>
+
+    <div id="pop-up">
+      <i class="fa-regular fa-circle-check"></i>
+
+      <div class="pop-up-text">
+        <h3>Log in successfully</h3>
+        <p>now you can enter the website</p>
+
+        <button id="pop-up-btn" type="submit">Okay</button>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/f32a350683.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
