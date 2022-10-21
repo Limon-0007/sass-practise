@@ -7,7 +7,7 @@
   border: none;
 }
 
-$cWidth: 390px;
+$cWidth: 360px;
 $cHeight: 420px;
 $bgColor: rgba(255, 255, 255, 0.5);
 $color: #fff;
@@ -47,6 +47,7 @@ div.active {
   transform: rotate(-12deg);
   border-radius: 10px;
 }
+
 
 .container img {
   width: 90px;
@@ -163,12 +164,14 @@ $pop-upText: #333;
   background-color: $pop-upColor;
   position: absolute;
   border-radius: $pop-upBorder;
-  transition: all 1s ease !important;
+  
 }
 
 #pop-up, #bg
  {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 2s ease;
 }
 
 #pop-up i {

@@ -16,10 +16,11 @@ function myFunction () {
 
 showButton.addEventListener("click", function () {
   logInForm.classList.add("active");
-  bg.style = "display: block;";
-  popUp.style = "display: block;";
+  bg.style = "visibility: visible; opacity:1;";
+  popUp.style = "visibility: visible; opacity:1;";
   logInForm.reset();
 });
+
 
 closeButton.addEventListener("click", function () {
   logInForm.classList.remove("active");
